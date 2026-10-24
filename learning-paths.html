@@ -8,31 +8,83 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-dark text-white">
+<body class="bg-obsidian text-white">
+
+  <div class="ambient-orb orb-1"></div>
+  <div class="ambient-orb orb-2"></div>
 
   <!-- Navigation Bar -->
-  <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark glass-nav">
-    <div class="container">
-      <a class="navbar-brand fw-bold" href="index.html">LearnSpace</a>
+  <nav class="navbar navbar-expand-lg sticky-top navbar-dark glass-nav">
+    <div class="container py-2">
+      <a class="navbar-brand fw-bold d-flex align-items-center gap-3 text-decoration-none" href="index.html">
+        <span class="fs-4 fw-black text-white">Learn<span class="text-cyan">Space</span></span>
+      </a>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto align-items-center">
+        <ul class="navbar-nav ms-auto align-items-center gap-lg-3">
           <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="courses.html">Explore Courses</a></li>
           <li class="nav-item"><a class="nav-link active" href="learning-paths.html">Learning Paths</a></li>
           <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="login.html">Sign In</a></li>
-          <li class="nav-item ms-lg-2"><a class="btn btn-primary btn-sm px-3 rounded-pill" href="signup.html">Get Started</a></li>
+          <li class="nav-item"><a class="nav-link text-cyan" href="dashboard.html">Portal</a></li>
+          <li class="nav-item ms-lg-2"><a class="btn btn-luxury-glow px-4 rounded-pill" href="signup.html">Get Started</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <div class="container py-5">
-    <h2 class="fw-bold mb-3">Structured Learning Paths</h2>
-    <p class="text-muted mb-4">Follow expertly crafted roadmaps designed to take you from beginner to professional.</p>
-    <a href="index.html" class="btn btn-outline-light rounded-pill"><i class="bi bi-arrow-left me-2"></i>Back to Home</a>
-  </div>
+  <header class="py-5 text-center">
+    <div class="container py-4">
+      <span class="badge bg-secondary bg-opacity-25 text-cyan border border-info border-opacity-25 px-3 py-2 rounded-pill mb-3">
+        <i class="bi bi-signpost-split me-1"></i> CAREER ACCELERATION TRACKS
+      </span>
+      <h1 class="display-4 fw-extrabold mb-3">Structured 3D Learning Paths</h1>
+      <p class="lead text-muted mx-auto" style="max-width: 600px;">Step-by-step career roadmaps designed to take you from absolute beginner to high-earning tech professional.</p>
+    </div>
+  </header>
 
+  <section class="pb-6">
+    <div class="container">
+      <div class="row g-4">
+        
+        <div class="col-md-6">
+          <div class="glass-card-3d p-5 rounded-4 h-100 d-flex flex-column">
+            <div class="badge bg-primary bg-opacity-25 text-cyan mb-3 w-fit rounded-pill px-3 py-1">Frontend Engineering Track</div>
+            <h3 class="fw-bold mb-3 text-white">Frontend Architect Masterclass</h3>
+            <p class="text-muted mb-4">A complete roadmap covering HTML5, CSS3, JavaScript ES6+, React.js, State Management, Tailwind CSS, and Web Performance Optimization.</p>
+            <ul class="list-unstyled text-muted small mb-4">
+              <li class="mb-2"><i class="bi bi-check-circle-fill text-cyan me-2"></i>6 Professional Milestones</li>
+              <li class="mb-2"><i class="bi bi-check-circle-fill text-cyan me-2"></i>12 Real-world Portfolio Projects</li>
+              <li class="mb-2"><i class="bi bi-check-circle-fill text-cyan me-2"></i>Estimated Duration: 6 Months</li>
+            </ul>
+            <div class="mt-auto">
+              <a href="dashboard.html" class="btn btn-cyan w-100 rounded-pill py-3 text-decoration-none">Start Learning Path</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="glass-card-3d p-5 rounded-4 h-100 d-flex flex-column">
+            <div class="badge bg-primary bg-opacity-25 text-cyan mb-3 w-fit rounded-pill px-3 py-1">Full-Stack Track</div>
+            <h3 class="fw-bold mb-3 text-white">Full-Stack Web Development</h3>
+            <p class="text-muted mb-4">Master back-end architecture with Node.js, Express, PostgreSQL, MongoDB, RESTful APIs, JWT Authentication, and Docker deployment.</p>
+            <ul class="list-unstyled text-muted small mb-4">
+              <li class="mb-2"><i class="bi bi-check-circle-fill text-cyan me-2"></i>8 Professional Milestones</li>
+              <li class="mb-2"><i class="bi bi-check-circle-fill text-cyan me-2"></i>15 Production-grade Systems</li>
+              <li class="mb-2"><i class="bi bi-check-circle-fill text-cyan me-2"></i>Estimated Duration: 8 Months</li>
+            </ul>
+            <div class="mt-auto">
+              <a href="dashboard.html" class="btn btn-cyan w-100 rounded-pill py-3 text-decoration-none">Start Learning Path</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-obsidian text-muted py-5 border-top border-glass text-center small">
+    <p class="mb-0">&copy; 2026 LearnSpace. All rights reserved.</p>
+  </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -8,31 +8,126 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-dark text-white">
+<body class="bg-obsidian text-white">
+
+  <div class="ambient-orb orb-1"></div>
+  <div class="ambient-orb orb-2"></div>
 
   <!-- Navigation Bar -->
-  <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark glass-nav">
-    <div class="container">
-      <a class="navbar-brand fw-bold" href="index.html">LearnSpace</a>
+  <nav class="navbar navbar-expand-lg sticky-top navbar-dark glass-nav">
+    <div class="container py-2">
+      <a class="navbar-brand fw-bold d-flex align-items-center gap-3 text-decoration-none" href="index.html">
+        <div class="logo-orbit-container">
+          <svg width="36" height="36" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M50 20L80 35L50 50L20 35L50 20Z" fill="#00f0ff" />
+            <path d="M20 55L50 70L80 55" stroke="#8b5cf6" stroke-width="6" stroke-linecap="round"/>
+            <ellipse cx="50" cy="50" rx="42" ry="16" transform="rotate(-25 50 50)" stroke="#00f0ff" stroke-width="4" stroke-dasharray="6 4"/>
+          </svg>
+        </div>
+        <span class="fs-4 fw-black text-white">Learn<span class="text-cyan">Space</span></span>
+      </a>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto align-items-center">
+        <ul class="navbar-nav ms-auto align-items-center gap-lg-3">
           <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
           <li class="nav-item"><a class="nav-link active" href="courses.html">Explore Courses</a></li>
           <li class="nav-item"><a class="nav-link" href="learning-paths.html">Learning Paths</a></li>
           <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="login.html">Sign In</a></li>
-          <li class="nav-item ms-lg-2"><a class="btn btn-primary btn-sm px-3 rounded-pill" href="signup.html">Get Started</a></li>
+          <li class="nav-item"><a class="nav-link text-cyan" href="dashboard.html">Portal</a></li>
+          <li class="nav-item ms-lg-2"><a class="btn btn-luxury-glow px-4 rounded-pill" href="signup.html">Get Started</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <div class="container py-5">
-    <h2 class="fw-bold mb-3">Explore All Courses</h2>
-    <p class="text-muted mb-4">Browse our comprehensive catalog of high-tech development, design, and data courses.</p>
-    <a href="index.html" class="btn btn-outline-light rounded-pill"><i class="bi bi-arrow-left me-2"></i>Back to Home</a>
-  </div>
+  <!-- Courses Header -->
+  <header class="py-5 text-center">
+    <div class="container py-4">
+      <span class="badge bg-secondary bg-opacity-25 text-cyan border border-info border-opacity-25 px-3 py-2 rounded-pill mb-3">
+        <i class="bi bi-journal-richtext me-1"></i> COMPREHENSIVE CURRICULUM
+      </span>
+      <h1 class="display-4 fw-extrabold mb-3">Explore All Elite Courses</h1>
+      <p class="lead text-muted mx-auto" style="max-width: 600px;">Master industry-ready tech skills with hands-on labs, expert instruction, and real-world projects.</p>
+    </div>
+  </header>
 
+  <!-- Courses Grid Section -->
+  <section class="pb-6">
+    <div class="container">
+      <div class="row g-4">
+        
+        <div class="col-md-6 col-lg-4">
+          <div class="glass-card-3d h-100 rounded-4 overflow-hidden d-flex flex-column">
+            <div class="card-thumb-3d bg-gradient-navy p-5 text-center position-relative">
+              <i class="bi bi-code-square display-2 text-cyan"></i>
+              <span class="badge bg-obsidian text-cyan position-absolute top-0 end-0 m-3 border border-info border-opacity-25 rounded-pill px-3 py-1">Beginner</span>
+            </div>
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="text-cyan small fw-bold">Development</span>
+                <span class="text-warning small fw-bold"><i class="bi bi-star-fill me-1"></i>4.9</span>
+              </div>
+              <h5 class="fw-bold mb-2 text-white">Complete Web Development</h5>
+              <p class="text-muted small mb-4 flex-grow-1">Master HTML, CSS, JavaScript, React, and Node.js with hands-on projects and real-world deployment.</p>
+              <div class="d-flex justify-content-between text-muted small border-top border-glass pt-3 mb-3">
+                <span><i class="bi bi-clock me-1"></i>48 Hours</span>
+                <span><i class="bi bi-journal-code me-1"></i>64 Lessons</span>
+              </div>
+              <a href="dashboard.html" class="btn btn-outline-cyan-3d w-100 rounded-pill py-2 text-decoration-none">Enroll Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="glass-card-3d h-100 rounded-4 overflow-hidden d-flex flex-column">
+            <div class="card-thumb-3d bg-gradient-navy p-5 text-center position-relative">
+              <i class="bi bi-filetype-py display-2 text-cyan"></i>
+              <span class="badge bg-obsidian text-cyan position-absolute top-0 end-0 m-3 border border-info border-opacity-25 rounded-pill px-3 py-1">Beginner</span>
+            </div>
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="text-cyan small fw-bold">Data & AI</span>
+                <span class="text-warning small fw-bold"><i class="bi bi-star-fill me-1"></i>4.9</span>
+              </div>
+              <h5 class="fw-bold mb-2 text-white">Python Programming</h5>
+              <p class="text-muted small mb-4 flex-grow-1">Learn core Python syntax, algorithms, data structures, and automation scripting for high-performance applications.</p>
+              <div class="d-flex justify-content-between text-muted small border-top border-glass pt-3 mb-3">
+                <span><i class="bi bi-clock me-1"></i>30 Hours</span>
+                <span><i class="bi bi-journal-code me-1"></i>42 Lessons</span>
+              </div>
+              <a href="dashboard.html" class="btn btn-outline-cyan-3d w-100 rounded-pill py-2 text-decoration-none">Enroll Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="glass-card-3d h-100 rounded-4 overflow-hidden d-flex flex-column">
+            <div class="card-thumb-3d bg-gradient-navy p-5 text-center position-relative">
+              <i class="bi bi-palette display-2 text-cyan"></i>
+              <span class="badge bg-obsidian text-cyan position-absolute top-0 end-0 m-3 border border-info border-opacity-25 rounded-pill px-3 py-1">Intermediate</span>
+            </div>
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="text-cyan small fw-bold">Design</span>
+                <span class="text-warning small fw-bold"><i class="bi bi-star-fill me-1"></i>4.85</span>
+              </div>
+              <h5 class="fw-bold mb-2 text-white">UI/UX Design Fundamentals</h5>
+              <p class="text-muted small mb-4 flex-grow-1">Craft stunning wireframes, luxury design systems, user journey maps, and interactive Figma prototypes.</p>
+              <div class="d-flex justify-content-between text-muted small border-top border-glass pt-3 mb-3">
+                <span><i class="bi bi-clock me-1"></i>28 Hours</span>
+                <span><i class="bi bi-journal-code me-1"></i>38 Lessons</span>
+              </div>
+              <a href="dashboard.html" class="btn btn-outline-cyan-3d w-100 rounded-pill py-2 text-decoration-none">Enroll Now</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-obsidian text-muted py-5 border-top border-glass text-center small">
+    <p class="mb-0">&copy; 2026 LearnSpace. All rights reserved.</p>
+  </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
