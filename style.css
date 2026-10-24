@@ -1,0 +1,208 @@
+/* ==========================================================================
+   LearnSpace — Ultra-Luxury High-Tech 3D Theme & Stylesheet
+   ================================================================---------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --obsidian: #030712;
+  --navy-deep: #0b0f19;
+  --cyan-accent: #00f0ff;
+  --violet-accent: #8b5cf6;
+  --glass-bg: rgba(255, 255, 255, 0.03);
+  --glass-border: rgba(255, 255, 255, 0.08);
+  --glass-border-glow: rgba(0, 240, 255, 0.3);
+  --shadow-3d: 0 20px 40px -15px rgba(0, 0, 0, 0.7), 0 0 30px rgba(0, 240, 255, 0.1);
+  --shadow-3d-deep: 0 30px 60px -20px rgba(0, 0, 0, 0.9), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+body {
+  background-color: var(--obsidian);
+  color: #f8f9fa;
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.bg-obsidian { background-color: var(--obsidian) !important; }
+.bg-glass-dark { background: rgba(11, 15, 25, 0.7); backdrop-filter: blur(20px); }
+.border-glass { border-color: var(--glass-border) !important; }
+.text-cyan { color: var(--cyan-accent) !important; }
+.fw-black { font-weight: 900; }
+
+/* Ambient Floating Background Orbs */
+.ambient-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(120px);
+  z-index: 0;
+  pointer-events: none;
+}
+.orb-1 {
+  width: 500px;
+  height: 500px;
+  background: rgba(0, 240, 255, 0.08);
+  top: 5%;
+  left: 10%;
+  animation: floatOrb 12s ease-in-out infinite alternate;
+}
+.orb-2 {
+  width: 600px;
+  height: 600px;
+  background: rgba(139, 92, 246, 0.08);
+  top: 30%;
+  right: 5%;
+  animation: floatOrb 15s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes floatOrb {
+  0% { transform: translateY(0px) scale(1); }
+  100% { transform: translateY(40px) scale(1.05); }
+}
+
+/* Glass Navbar */
+.glass-nav {
+  background: rgba(3, 7, 18, 0.8) !important;
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--glass-border);
+  z-index: 1000;
+}
+
+.logo-orbit-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: drop-shadow(0 0 10px rgba(0, 240, 255, 0.4));
+}
+
+/* 3D Glass Cards */
+.glass-card-3d {
+  background: var(--glass-bg);
+  backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--shadow-3d);
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transform: translateY(0);
+}
+
+.glass-card-3d:hover {
+  transform: translateY(-8px) scale(1.01);
+  border-color: var(--glass-border-glow);
+  box-shadow: 0 30px 60px -15px rgba(0, 240, 255, 0.25), 0 0 40px rgba(139, 92, 246, 0.15);
+}
+
+.hero-card-3d {
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.01));
+  backdrop-filter: blur(30px);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--shadow-3d-deep);
+}
+
+.glass-card-nested {
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(15px);
+  border: 1px solid var(--glass-border);
+}
+
+/* Typography & Gradients */
+.gradient-text-3d {
+  background: linear-gradient(135deg, #00f0ff 0%, #a855f7 50%, #6366f1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 0 30px rgba(0, 240, 255, 0.3));
+}
+
+.badge-pill-3d {
+  background: rgba(0, 240, 255, 0.05);
+  border: 1px solid var(--glass-border-glow);
+  box-shadow: inset 0 0 10px rgba(0, 240, 255, 0.1);
+}
+
+/* Buttons */
+.btn-luxury-glow {
+  background: linear-gradient(135deg, #00f0ff 0%, #6366f1 100%);
+  color: var(--obsidian);
+  font-weight: 700;
+  border: none;
+  box-shadow: 0 10px 25px -5px rgba(0, 240, 255, 0.4);
+  transition: all 0.3s ease;
+}
+
+.btn-luxury-glow:hover {
+  background: linear-gradient(135deg, #33f3ff, #7c3aed);
+  box-shadow: 0 15px 35px -5px rgba(0, 240, 255, 0.6), 0 0 20px rgba(139, 92, 246, 0.4);
+  transform: translateY(-2px);
+  color: var(--obsidian);
+}
+
+.btn-cyan {
+  background-color: var(--cyan-accent);
+  color: var(--obsidian);
+  font-weight: 700;
+  border: none;
+  transition: all 0.3s ease;
+}
+.btn-cyan:hover {
+  background-color: #33f3ff;
+  box-shadow: 0 0 20px rgba(0, 240, 255, 0.5);
+}
+
+.btn-outline-cyan-3d {
+  border: 1px solid var(--glass-border-glow);
+  color: var(--cyan-accent);
+  background: rgba(0, 240, 255, 0.03);
+  transition: all 0.3s ease;
+}
+.btn-outline-cyan-3d:hover {
+  background: var(--cyan-accent);
+  color: var(--obsidian);
+  box-shadow: 0 0 20px rgba(0, 240, 255, 0.4);
+}
+
+/* Category Chips */
+.btn-chip-3d {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  color: #9ca3af;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+.btn-chip-3d:hover, .btn-chip-3d.active {
+  background: linear-gradient(135deg, rgba(0, 240, 255, 0.2), rgba(139, 92, 246, 0.2));
+  color: var(--cyan-accent);
+  border-color: var(--glass-border-glow);
+  box-shadow: 0 0 20px rgba(0, 240, 255, 0.2);
+  font-weight: 600;
+}
+
+/* Stats Box 3D */
+.stat-box-3d {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--glass-border);
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease;
+}
+.stat-box-3d:hover {
+  transform: translateY(-4px);
+  border-color: var(--glass-border-glow);
+}
+
+/* Search Bar 3D */
+.search-bar-3d input:focus, .form-control:focus {
+  background-color: var(--obsidian) !important;
+  border-color: var(--cyan-accent) !important;
+  box-shadow: 0 0 25px rgba(0, 240, 255, 0.25) !important;
+  color: #ffffff !important;
+}
+
+/* Gradients */
+.bg-gradient-navy {
+  background: linear-gradient(180deg, rgba(15, 23, 42, 0.8) 0%, rgba(3, 7, 18, 0.95) 100%);
+}
+.bg-gradient-cyan-violet {
+  background: linear-gradient(90deg, #00f0ff 0%, #8b5cf6 100%);
+}
+
+.py-6 { padding-top: 6rem; padding-bottom: 6rem; }
+.w-fit { width: fit-content; }
+.hover-cyan:hover { color: var(--cyan-accent) !important; }

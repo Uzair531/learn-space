@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Secure Creator Dashboard — LearnSpace</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-obsidian text-white min-vh-100 d-flex flex-column">
+
+  <!-- Ambient Orbs -->
+  <div class="ambient-orb orb-1"></div>
+  <div class="ambient-orb orb-2"></div>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark glass-nav">
+    <div class="container py-2">
+      <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="index.html">
+        <i class="bi bi-shield-lock-fill text-cyan fs-4"></i>
+        <span>Learn<span class="text-cyan">Space</span> Portal</span>
+      </a>
+      <div class="ms-auto">
+        <a href="index.html" class="btn btn-outline-cyan-300 btn-sm rounded-pill px-3">Logout</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Dashboard Container -->
+  <div class="container my-5 flex-grow-1 z-index-2">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        
+        <!-- Welcome Card -->
+        <div class="glass-card-3d p-4 rounded-4 mb-4 d-flex align-items-center justify-content-between">
+          <div>
+            <h4 class="fw-bold mb-1 text-white">Welcome, Instructor</h4>
+            <p class="text-muted small mb-0">Manage your course catalog, curriculum files, and assets securely.</p>
+          </div>
+          <span class="badge bg-cyan text-obsidian fw-bold px-3 py-2 rounded-pill">SECURE SESSION</span>
+        </div>
+
+        <!-- File Upload Section -->
+        <div class="glass-card-3d p-5 rounded-5 shadow-3d">
+          <h4 class="fw-bold mb-3 d-flex align-items-center gap-2">
+            <i class="bi bi-cloud-arrow-up text-cyan"></i> Upload New Course Files
+          </h4>
+          <p class="text-muted small mb-4">Select or drag new learning materials, syllabus documents, or video packages below.</p>
+
+          <form id="uploadForm">
+            <div class="mb-3">
+              <label class="form-label text-muted small fw-semibold">Personal User ID / Instructor ID</label>
+              <input type="text" id="userId" class="form-control bg-obsidian text-white border-glass rounded-pill py-2.5 px-3" placeholder="e.g., ADMIN-001" required>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label text-muted small fw-semibold">Security Password</label>
+              <input type="password" id="userPass" class="form-control bg-obsidian text-white border-glass rounded-pill py-2.5 px-3" placeholder="••••••••" required>
+            </div>
+
+            <div class="mb-4">
+              <label class="form-label text-muted small fw-semibold">Select File (PDF, ZIP, MP4)</label>
+              <input type="file" id="courseFile" class="form-control bg-obsidian text-white border-glass rounded-pill py-2.5 px-3" required>
+            </div>
+
+            <button type="submit" class="btn btn-luxury-glow w-100 py-3 rounded-pill fw-bold shadow-3d">
+              <i class="bi bi-upload me-2"></i> Authenticate & Upload File
+            </button>
+          </form>
+
+          <div id="uploadStatus" class="mt-3 text-center small"></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-obsidian text-muted py-4 border-top border-glass text-center small">
+    <p class="mb-0">&copy; 2026 LearnSpace Secure Infrastructure.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.getElementById('uploadForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const id = document.getElementById('userId').value;
+      const pass = document.getElementById('userPass').value;
+      const fileInput = document.getElementById('courseFile');
+      const status = document.getElementById('uploadStatus');
+
+      // Demo verification logic (Replace with your backend endpoint if connected)
+      if (id.trim() !== "" && pass.trim() !== "" && fileInput.files.length > 0) {
+        status.innerHTML = `<span class="text-success fw-bold"><i class="bi bi-check-circle-fill me-1"></i> File "${fileInput.files[0].name}" successfully uploaded and verified for User ID: ${id}!</span>`;
+        document.getElementById('uploadForm').reset();
+      } else {
+        status.innerHTML = `<span class="text-danger">Please enter valid credentials and select a file.</span>`;
+      }
+    });
+  </script>
+</body>
+</html>

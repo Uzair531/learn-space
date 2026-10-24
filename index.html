@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LearnSpace — Luxury High-Tech Learning Platform</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-obsidian text-white">
+
+  <!-- Floating Ambient Orbs -->
+  <div class="ambient-orb orb-1"></div>
+  <div class="ambient-orb orb-2"></div>
+
+  <!-- Sticky Glass Navigation -->
+  <nav class="navbar navbar-expand-lg sticky-top navbar-dark glass-nav">
+    <div class="container py-2">
+      <a class="navbar-brand fw-bold d-flex align-items-center gap-3 text-decoration-none" href="index.html">
+        <!-- High-Tech Neon Orbit Logo SVG -->
+        <div class="logo-orbit-container">
+          <svg width="42" height="42" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M50 20L80 35L50 50L20 35L50 20Z" fill="url(#paint0_linear)" />
+            <path d="M20 55L50 70L80 55" stroke="url(#paint1_linear)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+            <ellipse cx="50" cy="50" rx="42" ry="16" transform="rotate(-25 50 50)" stroke="url(#paint2_linear)" stroke-width="4" stroke-dasharray="6 4"/>
+            <circle cx="82" cy="35" r="5" fill="#00f0ff" />
+            <defs>
+              <linearGradient id="paint0_linear" x1="20" y1="20" x2="80" y2="50" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#00f0ff"/>
+                <stop offset="1" stop-color="#8b5cf6"/>
+              </linearGradient>
+              <linearGradient id="paint1_linear" x1="20" y1="55" x2="80" y2="70" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#00f0ff"/>
+                <stop offset="1" stop-color="#a855f7"/>
+              </linearGradient>
+              <linearGradient id="paint2_linear" x1="8" y1="50" x2="92" y2="50" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#00f0ff" stop-opacity="0.8"/>
+                <stop offset="1" stop-color="#8b5cf6" stop-opacity="0.3"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <div class="d-flex flex-column">
+          <span class="fs-4 fw-black tracking-wider text-white lh-1">Learn<span class="text-cyan">Space</span></span>
+          <span class="brand-subtext text-muted" style="font-size: 0.65rem; letter-spacing: 2.5px;">LEARN • GROW • EXPLORE</span>
+        </div>
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-center gap-lg-3">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#courses-section">Explore Courses</a></li>
+          <li class="nav-item"><a class="nav-link" href="#paths-section">Learning Paths</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about-section">About</a></li>
+          <li class="nav-item"><a class="nav-link text-cyan" href="dashboard.html"><i class="bi bi-shield-lock me-1"></i>Portal</a></li>
+          <li class="nav-item"><a class="nav-link" href="login.html">Sign In</a></li>
+          <li class="nav-item ms-lg-2"><a class="btn btn-luxury-glow px-4 rounded-pill" href="signup.html">Get Started</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero-section py-6 position-relative overflow-hidden">
+    <div class="container py-5">
+      <div class="row align-items-center min-vh-75">
+        <div class="col-lg-6 text-center text-lg-start mb-5 mb-lg-0 z-index-2">
+          <div class="badge-pill-3d mb-4 d-inline-flex align-items-center gap-2 px-3 py-2 rounded-pill">
+            <i class="bi bi-stars text-cyan"></i>
+            <span class="small fw-semibold tracking-wide">NEXT-GEN HIGH-TECH PLATFORM</span>
+          </div>
+          <h1 class="display-3 fw-extrabold mb-4 lh-tight">
+            Upgrade Your Skills.<br>
+            <span class="gradient-text-3d">Redefine Your Future.</span>
+          </h1>
+          <p class="lead text-muted mb-5 fs-5">Discover expert-led courses, follow structured 3D learning paths, and build real-world elite skills with LearnSpace.</p>
+          <div class="d-flex justify-content-center justify-content-lg-start">
+            <a href="#courses-section" class="btn btn-luxury-glow btn-lg px-5 py-3 rounded-pill shadow-3d fw-bold">Call To Action</a>
+          </div>
+        </div>
+
+        <div class="col-lg-6 position-relative z-index-2">
+          <div class="hero-card-3d p-4 rounded-5 shadow-3d-deep position-relative">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+              <div class="d-flex align-items-center gap-2">
+                <span class="badge bg-cyan text-obsidian fw-bold px-2.5 py-1 rounded-pill">LIVE 3D PREVIEW</span>
+                <span class="text-muted small">* Demo Content</span>
+              </div>
+              <i class="bi bi-cpu-fill text-cyan fs-3 animate-pulse"></i>
+            </div>
+
+            <div class="glass-card-nested p-4 rounded-4 mb-4 border-glow">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="badge bg-primary bg-opacity-25 text-cyan">Development</span>
+                <span class="text-warning small fw-bold"><i class="bi bi-star-fill me-1"></i> 4.9 (1.2k)</span>
+              </div>
+              <h5 class="mb-2 fw-bold text-white">Complete Web Development Masterclass</h5>
+              <div class="progress bg-obsidian mt-3 rounded-pill" style="height: 8px;">
+                <div class="progress-bar bg-gradient-cyan-violet rounded-pill" style="width: 85%;"></div>
+              </div>
+            </div>
+
+            <div class="row g-3 text-center">
+              <div class="col-4">
+                <div class="stat-box-3d p-3 rounded-4">
+                  <h3 class="fw-extrabold text-cyan mb-0">120+</h3>
+                  <small class="text-muted">Courses</small>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="stat-box-3d p-3 rounded-4">
+                  <h3 class="fw-extrabold text-cyan mb-0">15+</h3>
+                  <small class="text-muted">Paths</small>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="stat-box-3d p-3 rounded-4">
+                  <h3 class="fw-extrabold text-cyan mb-0">45k+</h3>
+                  <small class="text-muted">Students</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Search & Categories Section -->
+  <section id="courses-section" class="py-6 position-relative">
+    <div class="container py-4">
+      <div class="row justify-content-center text-center mb-5">
+        <div class="col-lg-8">
+          <h2 class="display-5 fw-bold mb-3">Explore Our Knowledge Hub</h2>
+          <p class="text-muted fs-5">Search through premium tech curricula or select a category below.</p>
+          
+          <div class="position-relative my-4 search-bar-3d">
+            <i class="bi bi-search position-absolute top-50 start-0 translate-middle-y ms-4 text-cyan fs-4"></i>
+            <input type="text" id="courseSearch" class="form-control form-control-lg bg-obsidian text-white border-glass ps-6 rounded-pill shadow-3d" placeholder="What do you want to learn today?">
+          </div>
+
+          <div class="d-flex flex-wrap justify-content-center gap-2 mt-4" id="categoryChips">
+            <button class="btn btn-chip-3d active rounded-pill px-4 py-2" data-category="All">All Courses</button>
+            <button class="btn btn-chip-3d rounded-pill px-4 py-2" data-category="Development"><i class="bi bi-code-slash me-1"></i> Development</button>
+            <button class="btn btn-chip-3d rounded-pill px-4 py-2" data-category="Design"><i class="bi bi-palette me-1"></i> Design</button>
+            <button class="btn btn-chip-3d rounded-pill px-4 py-2" data-category="Data"><i class="bi bi-database me-1"></i> Data</button>
+            <button class="btn btn-chip-3d rounded-pill px-4 py-2" data-category="Business"><i class="bi bi-briefcase me-1"></i> Business</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Popular Courses Grid -->
+      <div class="row g-4 mt-3" id="coursesGrid">
+        
+        <div class="col-md-6 col-lg-4 course-item" data-category="Development" data-title="Complete Web Development" data-desc="Master HTML, CSS, JavaScript, React, and Node.js with hands-on projects and real-world deployment.">
+          <div class="glass-card-3d h-100 rounded-4 overflow-hidden d-flex flex-column">
+            <div class="card-thumb-3d bg-gradient-navy p-5 text-center position-relative">
+              <i class="bi bi-code-square display-2 text-cyan"></i>
+              <span class="badge bg-obsidian text-cyan position-absolute top-0 end-0 m-3 border border-info border-opacity-25 rounded-pill px-3 py-1">Beginner</span>
+            </div>
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="text-cyan small fw-bold">Development</span>
+                <span class="text-warning small fw-bold"><i class="bi bi-star-fill me-1"></i>4.9</span>
+              </div>
+              <h5 class="fw-bold mb-2 text-white">Complete Web Development</h5>
+              <p class="text-muted small mb-4 flex-grow-1">Master HTML, CSS, JavaScript, React, and Node.js with hands-on projects and real-world deployment.</p>
+              <div class="d-flex justify-content-between text-muted small border-top border-glass pt-3 mb-3">
+                <span><i class="bi bi-clock me-1"></i>48 Hours</span>
+                <span><i class="bi bi-journal-code me-1"></i>64 Lessons</span>
+              </div>
+              <button class="btn btn-outline-cyan-3d w-100 rounded-pill py-2">View Course</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 course-item" data-category="Development" data-title="HTML and CSS Masterclass" data-desc="Build modern, pixel-perfect, responsive web layouts using advanced CSS Grid, Flexbox, and CSS animations.">
+          <div class="glass-card-3d h-100 rounded-4 overflow-hidden d-flex flex-column">
+            <div class="card-thumb-3d bg-gradient-navy p-5 text-center position-relative">
+              <i class="bi bi-filetype-html display-2 text-cyan"></i>
+              <span class="badge bg-obsidian text-cyan position-absolute top-0 end-0 m-3 border border-info border-opacity-25 rounded-pill px-3 py-1">Beginner</span>
+            </div>
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="text-cyan small fw-bold">Development</span>
+                <span class="text-warning small fw-bold"><i class="bi bi-star-fill me-1"></i>4.8</span>
+              </div>
+              <h5 class="fw-bold mb-2 text-white">HTML and CSS Masterclass</h5>
+              <p class="text-muted small mb-4 flex-grow-1">Build modern, pixel-perfect, responsive web layouts using advanced CSS Grid, Flexbox, and CSS animations.</p>
+              <div class="d-flex justify-content-between text-muted small border-top border-glass pt-3 mb-3">
+                <span><i class="bi bi-clock me-1"></i>24 Hours</span>
+                <span><i class="bi bi-journal-code me-1"></i>32 Lessons</span>
+              </div>
+              <button class="btn btn-outline-cyan-3d w-100 rounded-pill py-2">View Course</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 course-item" data-category="Development" data-title="JavaScript from Beginner to Advanced" data-desc="Deep dive into Async/Await, ES6+, REST APIs, closures, object-oriented principles, and functional programming.">
+          <div class="glass-card-3d h-100 rounded-4 overflow-hidden d-flex flex-column">
+            <div class="card-thumb-3d bg-gradient-navy p-5 text-center position-relative">
+              <i class="bi bi-filetype-js display-2 text-cyan"></i>
+              <span class="badge bg-obsidian text-cyan position-absolute top-0 end-0 m-3 border border-info border-opacity-25 rounded-pill px-3 py-1">Intermediate</span>
+            </div>
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="text-cyan small fw-bold">Development</span>
+                <span class="text-warning small fw-bold"><i class="bi bi-star-fill me-1"></i>4.95</span>
+              </div>
+              <h5 class="fw-bold mb-2 text-white">JavaScript from Beginner to Advanced</h5>
+              <p class="text-muted small mb-4 flex-grow-1">Deep dive into Async/Await, ES6+, REST APIs, closures, object-oriented principles, and functional programming.</p>
+              <div class="d-flex justify-content-between text-muted small border-top border-glass pt-3 mb-3">
+                <span><i class="bi bi-clock me-1"></i>36 Hours</span>
+                <span><i class="bi bi-journal-code me-1"></i>50 Lessons</span>
+              </div>
+              <button class="btn btn-outline-cyan-3d w-100 rounded-pill py-2">View Course</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 course-item" data-category="Data" data-title="Python Programming" data-desc="Learn core Python syntax, algorithms, data structures, and automation scripting for high-performance applications.">
+          <div class="glass-card-3d h-100 rounded-4 overflow-hidden d-flex flex-column">
+            <div class="card-thumb-3d bg-gradient-navy p-5 text-center position-relative">
+              <i class="bi bi-filetype-py display-2 text-cyan"></i>
+              <span class="badge bg-obsidian text-cyan position-absolute top-0 end-0 m-3 border border-info border-opacity-25 rounded-pill px-3 py-1">Beginner</span>
+            </div>
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="text-cyan small fw-bold">Data & AI</span>
+                <span class="text-warning small fw-bold"><i class="bi bi-star-fill me-1"></i>4.9</span>
+              </div>
+              <h5 class="fw-bold mb-2 text-white">Python Programming</h5>
+              <p class="text-muted small mb-4 flex-grow-1">Learn core Python syntax, algorithms, data structures, and automation scripting for high-performance applications.</p>
+              <div class="d-flex justify-content-between text-muted small border-top border-glass pt-3 mb-3">
+                <span><i class="bi bi-clock me-1"></i>30 Hours</span>
+                <span><i class="bi bi-journal-code me-1"></i>42 Lessons</span>
+              </div>
+              <button class="btn btn-outline-cyan-3d w-100 rounded-pill py-2">View Course</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 course-item" data-category="Design" data-title="UI/UX Design Fundamentals" data-desc="Craft stunning wireframes, luxury design systems, user journey maps, and interactive Figma prototypes.">
+          <div class="glass-card-3d h-100 rounded-4 overflow-hidden d-flex flex-column">
+            <div class="card-thumb-3d bg-gradient-navy p-5 text-center position-relative">
+              <i class="bi bi-palette display-2 text-cyan"></i>
+              <span class="badge bg-obsidian text-cyan position-absolute top-0 end-0 m-3 border border-info border-opacity-25 rounded-pill px-3 py-1">Intermediate</span>
+            </div>
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="text-cyan small fw-bold">Design</span>
+                <span class="text-warning small fw-bold"><i class="bi bi-star-fill me-1"></i>4.85</span>
+              </div>
+              <h5 class="fw-bold mb-2 text-white">UI/UX Design Fundamentals</h5>
+              <p class="text-muted small mb-4 flex-grow-1">Craft stunning wireframes, luxury design systems, user journey maps, and interactive Figma prototypes.</p>
+              <div class="d-flex justify-content-between text-muted small border-top border-glass pt-3 mb-3">
+                <span><i class="bi bi-clock me-1"></i>28 Hours</span>
+                <span><i class="bi bi-journal-code me-1"></i>38 Lessons</span>
+              </div>
+              <button class="btn btn-outline-cyan-3d w-100 rounded-pill py-2">View Course</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 course-item" data-category="Data" data-title="Data Analytics Essentials" data-desc="Transform raw data into strategic business insights using advanced SQL queries, Pandas, and Tableau visualization.">
+          <div class="glass-card-3d h-100 rounded-4 overflow-hidden d-flex flex-column">
+            <div class="card-thumb-3d bg-gradient-navy p-5 text-center position-relative">
+              <i class="bi bi-bar-chart-line display-2 text-cyan"></i>
+              <span class="badge bg-obsidian text-cyan position-absolute top-0 end-0 m-3 border border-info border-opacity-25 rounded-pill px-3 py-1">Advanced</span>
+            </div>
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="text-cyan small fw-bold">Data</span>
+                <span class="text-warning small fw-bold"><i class="bi bi-star-fill me-1"></i>4.9</span>
+              </div>
+              <h5 class="fw-bold mb-2 text-white">Data Analytics Essentials</h5>
+              <p class="text-muted small mb-4 flex-grow-1">Transform raw data into strategic business insights using advanced SQL queries, Pandas, and Tableau visualization.</p>
+              <div class="d-flex justify-content-between text-muted small border-top border-glass pt-3 mb-3">
+                <span><i class="bi bi-clock me-1"></i>40 Hours</span>
+                <span><i class="bi bi-journal-code me-1"></i>55 Lessons</span>
+              </div>
+              <button class="btn btn-outline-cyan-3d w-100 rounded-pill py-2">View Course</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Learning Paths Section -->
+  <section id="paths-section" class="py-6 bg-glass-dark border-top border-bottom border-glass">
+    <div class="container py-4">
+      <div class="text-center mb-5">
+        <h2 class="display-5 fw-bold mb-2">Structured 3D Learning Paths</h2>
+        <p class="text-muted fs-5">Follow step-by-step career tracks curated by industry leaders.</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="glass-card-3d p-4 rounded-4 h-100 d-flex flex-column">
+            <div class="badge bg-primary bg-opacity-25 text-cyan mb-3 w-fit rounded-pill px-3 py-1">Frontend Path</div>
+            <h5 class="fw-bold mb-2 text-white">Frontend Engineering</h5>
+            <p class="text-muted small mb-4">HTML5, CSS3, JavaScript ES6+, React, Tailwind CSS, & Performance Tuning.</p>
+            <div class="mt-auto border-top border-glass pt-3">
+              <small class="text-muted d-block mb-3"><i class="bi bi-speedometer2 me-1 text-cyan"></i> Beginner to Pro</small>
+              <button class="btn btn-sm btn-cyan w-100 rounded-pill py-2">Start Learning Path</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="glass-card-3d p-4 rounded-4 h-100 d-flex flex-column">
+            <div class="badge bg-primary bg-opacity-25 text-cyan mb-3 w-fit rounded-pill px-3 py-1">Full-Stack Path</div>
+            <h5 class="fw-bold mb-2 text-white">Full-Stack Web Dev</h5>
+            <p class="text-muted small mb-4">Node.js, Express, PostgreSQL, MongoDB, RESTful APIs, and DevOps basics.</p>
+            <div class="mt-auto border-top border-glass pt-3">
+              <small class="text-muted d-block mb-3"><i class="bi bi-speedometer2 me-1 text-cyan"></i> Intermediate</small>
+              <button class="btn btn-sm btn-cyan w-100 rounded-pill py-2">Start Learning Path</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="glass-card-3d p-4 rounded-4 h-100 d-flex flex-column">
+            <div class="badge bg-primary bg-opacity-25 text-cyan mb-3 w-fit rounded-pill px-3 py-1">Python & AI Path</div>
+            <h5 class="fw-bold mb-2 text-white">Python Data Science</h5>
+            <p class="text-muted small mb-4">NumPy, Pandas, Data Cleaning, Scikit-Learn Machine Learning Models.</p>
+            <div class="mt-auto border-top border-glass pt-3">
+              <small class="text-muted d-block mb-3"><i class="bi bi-speedometer2 me-1 text-cyan"></i> Intermediate to Advanced</small>
+              <button class="btn btn-sm btn-cyan w-100 rounded-pill py-2">Start Learning Path</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="glass-card-3d p-4 rounded-4 h-100 d-flex flex-column">
+            <div class="badge bg-primary bg-opacity-25 text-cyan mb-3 w-fit rounded-pill px-3 py-1">Design System Path</div>
+            <h5 class="fw-bold mb-2 text-white">UI/UX Architecture</h5>
+            <p class="text-muted small mb-4">User Research, Wireframing, Figma Design Systems, and Usability Testing.</p>
+            <div class="mt-auto border-top border-glass pt-3">
+              <small class="text-muted d-block mb-3"><i class="bi bi-speedometer2 me-1 text-cyan"></i> All Skill Levels</small>
+              <button class="btn btn-sm btn-cyan w-100 rounded-pill py-2">Start Learning Path</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about-section" class="py-6 border-top border-glass">
+    <div class="container py-4">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <h2 class="display-5 fw-bold mb-3">About <span class="text-cyan">LearnSpace</span></h2>
+          <p class="text-muted leading-relaxed fs-5">LearnSpace is a next-generation high-tech learning ecosystem created to bridge the gap between education and global industry demands. Built with sleek luxury aesthetics and deep pedagogical principles, our platform equips students with real-world skills in coding, design, and data science.</p>
+        </div>
+        <div class="col-lg-6">
+          <div class="glass-card-3d p-4 rounded-4 border-glow">
+            <div class="d-flex align-items-center gap-3 mb-4">
+              <div class="icon-box-3d p-3 rounded-4 bg-primary bg-opacity-25 text-cyan fs-2">
+                <i class="bi bi-shield-check"></i>
+              </div>
+              <div>
+                <h5 class="mb-1 fw-bold text-white">Verified Industry Certification</h5>
+                <p class="text-muted small mb-0">Earn shareable cryptographic certificates upon path completion.</p>
+              </div>
+            </div>
+            <div class="d-flex align-items-center gap-3">
+              <div class="icon-box-3d p-3 rounded-4 bg-primary bg-opacity-25 text-cyan fs-2">
+                <i class="bi bi-person-workspace"></i>
+              </div>
+              <div>
+                <h5 class="mb-1 fw-bold text-white">1-on-1 Mentorship Community</h5>
+                <p class="text-muted small mb-0">Connect directly with Senior Developers & Luxury UX Designers.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-obsidian text-muted py-6 border-top border-glass">
+    <div class="container">
+      <div class="row g-4 mb-5">
+        <div class="col-lg-4">
+          <a class="fw-bold text-white fs-4 d-inline-block mb-3 text-decoration-none" href="#">Learn<span class="text-cyan">Space</span></a>
+          <p class="small text-muted leading-relaxed">A luxury technology-inspired educational platform designed for forward-thinking developers, creators, and analysts.</p>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h6 class="text-white fw-bold mb-3 tracking-wide">Quick Links</h6>
+          <ul class="list-unstyled small">
+            <li class="mb-2"><a href="index.html" class="text-muted text-decoration-none hover-cyan">Home</a></li>
+            <li class="mb-2"><a href="#courses-section" class="text-muted text-decoration-none hover-cyan">Courses</a></li>
+            <li class="mb-2"><a href="#paths-section" class="text-muted text-decoration-none hover-cyan">Learning Paths</a></li>
+            <li class="mb-2"><a href="dashboard.html" class="text-cyan text-decoration-none hover-cyan">Portal</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h6 class="text-white fw-bold mb-3 tracking-wide">Categories</h6>
+          <ul class="list-unstyled small">
+            <li class="mb-2"><a href="#" class="text-muted text-decoration-none hover-cyan">Development</a></li>
+            <li class="mb-2"><a href="#" class="text-muted text-decoration-none hover-cyan">UI/UX Design</a></li>
+            <li class="mb-2"><a href="#" class="text-muted text-decoration-none hover-cyan">Data Analytics</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4">
+          <h6 class="text-white fw-bold mb-3 tracking-wide">Newsletter</h6>
+          <div class="input-group search-bar-3d">
+            <input type="email" class="form-control bg-obsidian text-white border-glass py-3" placeholder="Enter your email">
+            <button class="btn btn-cyan px-4">Subscribe</button>
+          </div>
+        </div>
+      </div>
+      <div class="text-center pt-4 border-top border-glass small text-muted">
+        <p class="mb-0">&copy; 2026 LearnSpace. All rights reserved. Luxury High-Tech Learning Platform.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const searchInput = document.getElementById('courseSearch');
+    const categoryChips = document.querySelectorAll('.btn-chip-3d');
+    const courseItems = document.querySelectorAll('.course-item');
+
+    let activeCategory = 'All';
+
+    categoryChips.forEach(chip => {
+      chip.addEventListener('click', () => {
+        categoryChips.forEach(c => c.classList.remove('active'));
+        chip.classList.add('active');
+        activeCategory = chip.getAttribute('data-category');
+        filterCourses();
+      });
+    });
+
+    searchInput.addEventListener('input', filterCourses);
+
+    function filterCourses() {
+      const searchTerm = searchInput.value.toLowerCase().trim();
+
+      courseItems.forEach(item => {
+        const category = item.getAttribute('data-category');
+        const title = item.getAttribute('data-title').toLowerCase();
+        const desc = item.getAttribute('data-desc').toLowerCase();
+
+        const matchesCategory = (activeCategory === 'All' || category === activeCategory);
+        const matchesSearch = title.includes(searchTerm) || desc.includes(searchTerm);
+
+        if (matchesCategory && matchesSearch) {
+          item.style.display = 'block';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    }
+  </script>
+</body>
+</html>
